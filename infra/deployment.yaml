@@ -15,6 +15,6 @@ spec:
         app: vault
     spec:
       initContainers:
-      - name: vault
-        image: vault:1.0.1
-        args: ["agent", "-config=/etc/vault/agent-config.hcl"]
+        - name: vault
+          image: 'vault:1.0.1'
+          args: ["agent", "-config=/etc/vault/agent-config.hcl"]
