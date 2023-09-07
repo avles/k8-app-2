@@ -18,3 +18,8 @@ spec:
         - name: vault
           image: 'vault:1.0.1'
           args: ["agent", "-config=/etc/vault/agent-config.hcl"]
+          command:
+            - vault
+          securityContext:
+            runAsNonRoot: true
+            allowPrivilegeEscalation: false
