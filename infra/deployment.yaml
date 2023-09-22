@@ -21,6 +21,5 @@ spec:
           command:
             - vault
           securityContext:
-            runAsNonRoot: false
-            runAsUser: 0
-            allowPrivilegeEscalation: true
+            runAsNonRoot: true
+            allowPrivilegeEscalation: false
